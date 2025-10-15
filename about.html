@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Affan - Developer Portfolio</title>
+    <title>Sowmiya-Ai Enthusiast</title>
     <link rel="stylesheet" href="style.css" class="rel" />
     <link rel="icon" href="assests/icon.png" class="rel" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,8 +23,8 @@
     <header>
       <nav class="navbar">
         <div class="namelogo">
-          <img src="assests/affan1.jpg" />
-          <div class="left">&nbsp;Affan's Portfolio</div>
+          <img src="assests/Sowmiya.jpg" />
+          <div class="left">&nbsp;Sowmiya's Portfolio</div>
         </div>
         <div class="right">
           <ul class="navbar-menu">
@@ -43,57 +43,93 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="heading">Certificates</h1>
-      <hr style="margin-top: -65px" />
-      <div class="certificate">
-        <img src="assests/delta.jpg" alt="op" />
-        <img src="assests/coursera python.jpg" alt="op" />
-        <img src="assests/oops.jpg" alt="" />
-        <img src="assests/coursera_java.jpg" alt="#" />
-        <img src="assests/writing.jpg" alt="" />
-        <img src="assests/Programming in c.jpg" alt="p" />
-        <img src="assests/AI using python.jpg" alt="" />
-        <img src="assests/pythontraining.jpg" alt="" />
-        <h1 class="heading">Hackathon Certificates</h1>
-        <hr style="margin-top: -95px" />
-        <img src="assests/iemhackathon.jpg" alt="" />
-        <img src="assests/Trividia-Rescue.jpg" alt="" />
-        <h1 class="heading">ExtraCurricular Certificates</h1>
-        <hr style="margin-top: -95px" />
-        <img src="assests/kritanj.jpg" alt="" />
-        <img src="assests/indus.jpg" alt="" />
-      </div>
-    </main>
+   <main>
+  <h1 class="heading">Certificates</h1>
+  <hr style="margin-top: -20px;" />
+  
+  <div class="certificates-container">
+    <div class="certificate-item">
+      <img src="assests/Sowmidelta.jpg" alt="Delta Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmipython.jpg" alt="Python Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmioops.jpg" alt="OOPS Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmijava.jpg" alt="Java Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmiwriting.jpg" alt="Writing Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmic.jpg" alt="C Certificate" />
+    </div>
+    <div class="certificate-item">
+      <img src="assests/sowmiai.jpg" alt="AI Certificate" />
+    </div>
+  </div>
+</main>
+
+<style>
+main {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* space between certificates */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certificate-item {
+  flex: 1 1 45%; /* two per row */
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.certificate-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .certificate-item {
+    flex: 1 1 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certificate-item {
+    flex: 1 1 100%; /* stack vertically on mobile */
+  }
+}
+</style>
+
 
     <!-- SLIDE TO TOP -->
     <button id="scrollToTop" class="fixed-btn scroll-top">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <!-- Chatbot Button -->
-    <section id="chatbotContainer">
-      <div class="chatbot-icon" onclick="toggleChatbot()">💬</div>
-
-      <!-- Chatbot Container -->
-      <div class="chatbot-container">
-        <div class="chatbot-header">
-          Chatbot
-          <span class="close-btn" onclick="toggleChatbot()">×</span>
-        </div>
-        <div class="chatbot-messages" id="chatbotMessages">
-          <div class="bot-message">Hello! How can I help you? 😊</div>
-        </div>
-        <div class="chatbot-input">
-          <input
-            type="text"
-            id="userInput"
-            placeholder="Type a message..."
-            onkeypress="handleKeyPress(event)"
-          />
-          <button onclick="sendMessage()">➤</button>
-        </div>
-      </div>
+    
     </section>
 
     <footer>
@@ -101,48 +137,38 @@
         <div class="footer-container">
           <!-- Branding Section with Social Media Links -->
           <div class="footer-section footer-brand">
-            <h3>Affan's Developer Portfolio</h3>
+            <h3>Sowmiya AI/ML Devoloper</h3>
             <p>Turning ideas into reality, one line of code at a time.</p>
             <div class="footer-social">
               <ul>
                 <li>
                   <a
-                    href="https://www.instagram.com/mr_affan15/"
+                    href="https://www.instagram.com/iam_sowmi05?igsh=dWk1cDd6djV0djg4"
                     target="_blank"
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="https://github.com/affancoder" target="_blank"
+                  <a href="https://github.com/PKSowmiya05" target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
+  
                 <li>
                   <a
-                    href="https://www.youtube.com/@mr_affan15/featured"
-                    target="_blank"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/mdaffanasghar/"
+                    href="https://www.linkedin.com/in/sowmiya-karthikeyan-5bbbb725a/"
                     target="_blank"
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
                 <li>
                   <a
-                    href="https://www.hackerrank.com/profile/mdaffancoder"
+                    href="https://leetcode.com/u/sowmiya_pk/"
                     target="_blank"
-                    ><i class="fa-brands fa-hackerrank"></i
+                    ><i class="fa-brands fa-leetcode"></i
                   ></a>
                 </li>
-                <li>
-                  <a href="https://discord.com/channels/@me" target="_blank"
-                    ><i class="fa-brands fa-discord"></i
-                  ></a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -176,15 +202,15 @@
           <!-- Contact Information Section -->
           <div class="footer-section footer-contact">
             <h4>Contact</h4>
-            <p><i class="fa fa-phone"></i> +91 93398 28230</p>
-            <p><i class="fa fa-envelope"></i> affanasgar8@gmail.com</p>
+            <p><i class="fa fa-phone"></i> +91 9952896414</p>
+            <p><i class="fa fa-envelope"></i> karthisowmiya05@gmail.com</p>
             <p>
-              <i class="fa fa-map-marker"></i> Kankinara, Kolkata, West Bengal
+              <i class="fa fa-map-marker"></i> 15/A, AVP layout 6th Gandhi nagar,Tirupur
             </p>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>Copyright &copy; affansportfolio.com | All rights reserved</p>
+          <p>Copyright &copy; Sowmiya Karthikeyan| All rights reserved</p>
         </div>
       </div>
     </footer>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affan - Developer Portfolio</title>
+  <title>Sowmiya's - AI/ML Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" class="rel" />
   <link rel="icon" href="assests/icon.png" class="rel" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,8 +18,8 @@
   <header>
     <nav class="navbar">
       <div class="namelogo">
-        <img src="assests/affan1.jpg">
-        <div class="left">&nbsp;Affan's Portfolio</div>
+        <img src="assests/Sowmiya.jpg">
+        <div class="left">&nbsp;Sowmiya's Portfolio</div>
       </div>
       <div class="right">
         <ul class="navbar-menu">
@@ -39,276 +39,192 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h1 class="heading">Latest Projects</h1>
-    </section>
-    <section class="con-video">
+    <section class="projects-section">
+  <h1 class="heading">Latest Projects</h1>
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/wanderlust.mp4" alt="simon" controls poster="assests/wanderlustpic.jpg">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>🏠 WanderLust - Holidays Homes</h2><br>Web Application Major Project<br><br>
-          <p>I have successfully designed and implemented a <b>Full-Stack Airbnb clone</b>, which replicates the core
-            functionality of the Airbnb platform. This project encompasses various components, including a user-friendly
-            front-end interface, a dynamic back-end server, and a robust database system and also implemented Map API
-            features to locate the rental homes with <b>MVC Framework</b> and many more please read on github for more
-            details.</p>
-          <div class="buttons">
-            <button class="source-btn"><a
-                href="https://wanderlust-projectaffan.onrender.com/listings">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/WanderLust">Source</a></button>
-          </div>
-        </div>
-      </div>
+  <!-- Smart Attendance System -->
+  <div class="project-card">
+    <h2>🤖 Smart Attendance System - June 2024</h2>
+    <p><b>Machine Learning Major Project</b></p>
+    <p>
+      Developed a <b>Smart Attendance System</b> that recognizes faces in real-time and automatically marks attendance.
+      The system also detects ID cards using object detection techniques.<br>
+      <b>Key libraries:</b> OpenCV, face recognition library, YOLO.
+    </p>
+    <div class="project-buttons">
+      <a class="source-btn" href="https://github.com/PKSowmiya05/smart-attendance-system" target="_blank">Source</a>
+    </div>
+  </div>
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/nohate.mp4" alt="simon" controls poster="assests/nohate.png">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>💬 Nohate – Full Stack Social Awareness Platform</h2><br>
-          <p>
-            Nohate is a responsive web app built entirely by myself using HTML, CSS, JavaScript, Locomotive JS, and GSAP
-            for smooth animations. It uses Firebase for real-time database and authentication. A live dashboard panel,
-            similar to a CRM, is integrated through H-Panel, allowing admins to monitor users, manage content, and
-            ensure a hate-free environment. The app promotes safe and respectful online interactions with a sleek UI and
-            real-time updates.
-          </p>
+  <!-- Domain-Dash -->
+  <div class="project-card">
+    <h2>💡 Domain-Dash - Project Ideas</h2>
+    <p><b>Web Development Major Project</b></p>
+    <p>
+      Built a <b>React.js web application</b> that suggests curated project ideas across multiple domains such as AI, Web Development, and Machine Learning.
+      The app dynamically displays project titles and details, helping users select impactful projects quickly and efficiently.
+    </p>
+    <div class="project-buttons">
+      <a class="source-btn" href="https://github.com/PKSowmiya05/domain-dash-ideas" target="_blank">Source</a>
+    </div>
+  </div>
+
+  <!-- Credit Card Fraud Detection -->
+  <div class="project-card">
+    <h2>💳 Credit Card Fraud Detection</h2>
+    <p><b>Machine Learning Major Project</b></p>
+    <p>
+      Developed a machine learning-based solution to detect fraudulent credit card transactions using the Credit Card Fraud Detection dataset.
+      The application includes a <b>Streamlit</b> web app where users can enter transaction details and get predictions instantly.
+    </p>
+    <p>
+      <b>Streamlit App:</b> Modern and clean design using Streamlit Columns. Users can input transaction details (Amount, V1-V28 features) and instantly predict whether the transaction is fraudulent or safe.
+    </p>
+    <div class="project-buttons">
+      <a class="source-btn" href="https://github.com/credit-card" target="_blank">Source</a>
+    </div>
+  </div>
+
+  <!-- Plagiarism Detector -->
+  <div class="project-card">
+    <h2>📄 Plagiarism Detector</h2>
+    <p>
+      Developed a simple web-based Plagiarism Detector that allows users to input text and check for plagiarism.
+      The application features a clean and professional UI with responsive design.
+    </p>
+    <div class="project-buttons">
+      <a class="source-btn" href="https://github.com/Anti_Plagarism_Detector" target="_blank">Source</a>
+    </div>
+  </div>
+
+</section>
+
+<style>
+.projects-section {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.projects-section .heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: #2e3b55;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons .source-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.project-buttons .source-btn:hover {
+  background-color: #2563eb;
+}
+</style>
 
 
-          <div class="buttons">
-            <button class="source-btn"><a href="https://nohate.vercel.app/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/NoHate">Source</a></button>
-          </div>
-        </div>
-      </div>
+<style>
+.projects-section {
+  background-color: #1e293b; /* Portfolio dark background */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-      <div style="margin-bottom: 140px;"></div>
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/Simon.mp4" alt="simon" controls poster="assests/simon_ss.png">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>🎨 Simon Says Game</h2><br>
-          <p>I have made this Simon Says Game by using HTML, CSS AND JAVASCRIPT this is one of my Front-end Web
-            Development project, bascially here i developed my javaScript concepts and it is responsive for all devices
-          </p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/Simon-Says_Game/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Simon-Says_Game">Source</a></button>
-          </div>
-        </div>
-      </div>
+.projects-section .heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/weather_app.mp4" alt="simon" controls poster="assests/weatherapp.jpg">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>🌈 WeatherApp</h2><br>
-          <p>I've developed a sleek and user-friendly weather app using <strong>React</strong>, from a reliable weather
-            API.It's provides accurate and up-to-date weather information, allowing users to effortlessly check
-            forecasts, current conditions. The intuitive design ensures a seamless user experience, making it easy for
-            anyone to stay informed about the weather with just a few clicks.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://weatherapp-affan.netlify.app/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/WeatherApp">Source</a></button>
-          </div>
-        </div>
-      </div>
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/amzon-clone.mp4" alt="simon" controls poster="assests/amazon.png">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>🛒 Amazon</h2><br><p>Welcome to the Amazon Clone, a meticulously crafted
-            Front-end project that mirrors the renowned Amazon shopping experience. This endeavor represents a
-            harmonious blend of HTML, CSS, JavaScript, and Bootstrap, meticulously orchestrated to deliver a seamless
-            and responsive website design.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/e-commerce/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/e-commerce">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-card {
+  background-color: #2e3b55;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <!-- video autoplay -->
-          <video loop src="assests/ProVideo/spotify.mp4" alt="" controls poster="assests/newspotfy.png">
-        </div>
-        <div class="secondSec">
-          <h2>🎧 Spotify Web Player</h2><br>
-          <p>I have made this Spotify Web Player by using HTML & CSS, this is one of my best Front-end Web Development
-            project, intention is to understand that how project built and works to enhance web developments skills and
-            one special is thing is that this is Responsive to all devices.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://spotify-delta.netlify.app/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Spotify_Web_Player">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-card:hover {
+  transform: translateY(-5px);
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/CineFlex.mp4" alt="simon" controls poster="assests/screenshot.png">
-        </div>
-        <div class="secondSec" id="project-details">
-          <h2>🎬 CineFlex</h2><br>
-          <p>I crafted a CineFlex clone for my frontend project, leveraging HTML and CSS. The project mirrors the visual
-            style of CineFlex, demonstrating my proficiency in web development. It encompasses a thoughtfully designed
-            layout, responsive elements, and meticulous styling, showcasing my ability to recreate a popular interface
-            using fundamental web technologies.</p>
-          <div class="buttons" style="z-index: 10;">
-            <button class="source-btn"><a href="https://affancoder.github.io/CineFlex/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/CineFlex">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <!-- video autoplay -->
-          <video loop src="assests/ProVideo/spotify-harry.mp4" alt="" controls poster="assests/spo.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>🎵 Music Web Player</h2><br>
-          <p>This Functional Music Player web project is developed using HTML, CSS & JavaScript that emulates the core
-            functionalities of the popular music streaming service, Spotify. It provides users with an immersive music
-            listening experience and a user-friendly interface. The project aims to showcase web development skills</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/Music_Player/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Music_Player">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/disasater_mangement.mp4" alt="simon" controls
-            poster="assests/NationalPreparedness.png">
-        </div>
-        <div class="secondSec">
-          <h2>🌪️ Disaster Management</h2><br>
-          <p>This is one part of project which i have made for internal hackathon using <b>React</b> and
-            <b>Tailwindcss</b> in just two days along learning with Tailwindcss design for improvment of my Frontend Web
-            Development skills.
-          </p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://response-disaster.onrender.com/">Visit</a></button>
-            <button class="source-btn"><a
-                href="https://github.com/affancoder/Disaster_managemnet-Response">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-buttons {
+  margin-top: 10px;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/portfolio_website.mp4" alt="simon" controls poster="assests/hireweb.gif">
-        </div>
-        <div class="secondSec">
-          <h2>👨‍💻 Portfolio Website</h2><br>
-          <p>This is my self made personal Portfolio Website without took any guidence from any tutorial even not
-            inspiring from others design for improvment of my Frontend Web Development skills. Here, you can see i don't
-            use any Framework to bulid, website is build from core of my knowlegde</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/Portfolio_Website/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Portfolio_Website">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-buttons .source-btn {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
 
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/ExploreAway.mp4" alt="simon" controls poster="assests/thumb.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>✈️ ExploreAway : Tourist Website</h2><br>
-          <p>Welcome to ExploreAway, a meticulously crafted tourist website designed to elevate your travel experience
-            to new heights! Developed with passion and precision, this platform is your go-to destination for
-            discovering the world's most captivating destinations, hidden gems, and unforgettable experiences.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/ExploreAway/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/ExploreAway">Source</a></button>
-          </div>
-        </div>
-      </div>
+.project-buttons .source-btn:hover {
+  background-color: #2563eb;
+}
+</style>
 
-      <hr>
-
-      <div>
-        <h1 style="text-align: center; height: 130px;">Tiny Fun Projects</h1>
-      </div>
-
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/railwayproject.mp4" alt="simon" controls poster="assests/rail.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>🚂 Railway Reservation System</h2><br>
-          <p>I developed a railway reservation system frontend project in just 10 minutes using AI with ChatGPT. From
-            generating code snippets to fetching complete code, AI streamlined the entire process. The project is now
-            live, showcasing the power and efficiency of AI in rapid development.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://railway-reservation-system-grp3.vercel.app/">Visit</a></button>
-            <button class="source-btn"><a
-                href="https://github.com/affancoder/Railway-Reservation-System">Source</a></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/bmw.mp4" alt="simon" controls poster="assests/bmw.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>🚗 BMW Logo</h2><br>
-          <p>I have made this BMW logo design using HTML and CSS just for practiced bcoz i found this tiny project very
-            intersting and building concepts of border,various margin, nth-child curving the text and most important the
-            z-index to put text on the border of all these properties of CSS and using perfect container tags in HTML.
-          </p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/BMW_Logo/">visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/BMW_Logo">Source</a></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/audi_logo.mp4" alt="simon" controls poster="assests/audi.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>🚘 Audi Logo</h2><br>
-          <p>I have made this AUDI logo design using HTML and CSS just for practiced bcoz i found this tiny project very
-            intersting and building concepts of border,various,z-index margin and many more tiny necessary details of
-            all these properties of CSS and the most important it is responsive to all devices</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://affancoder.github.io/Audi_Logo/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Audi_Logo">Source</a></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="firstSec">
-          <video loop src="assests/ProVideo/animated_login.mp4" alt="simon" controls poster="assests/ani.jpg">
-        </div>
-        <div class="secondSec">
-          <h2>✨ Animated Login Page</h2><br>
-          <p>I have made this Animated Login Page design using HTML and CSS just for practiced bcoz i found this tiny
-            project very intersting and building concepts of animation properties and values of CSS.</p>
-          <div class="buttons">
-            <button class="source-btn"><a href="https://aesthetic-login-page.netlify.app/">Visit</a></button>
-            <button class="source-btn"><a href="https://github.com/affancoder/Animated-Login_Page">Source</a></button>
-          </div>
-        </div>
-      </div>
-
-    </section>
   </main>
 
   <!-- SLIDE TO TOP -->
@@ -341,21 +257,19 @@
       <div class="footer-container">
         <!-- Branding Section with Social Media Links -->
         <div class="footer-section footer-brand">
-          <h3>Affan's Developer Portfolio</h3>
+          <h3>Sowmiya's Developer Portfolio</h3>
           <p>Turning ideas into reality, one line of code at a time.</p>
           <div class="footer-social">
             <ul>
-              <li><a href="https://www.instagram.com/mr_affan15/" target="_blank"><i
+              <li><a href="https://www.instagram.com/iam_sowmi05?igsh=dWk1cDd6djV0djg4" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="https://github.com/affancoder" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-              <li><a href="https://www.youtube.com/@mr_affan15/featured" target="_blank"><i
-                    class="fa-brands fa-youtube"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/mdaffanasghar/" target="_blank"><i
+              <li><a href="https://github.com/PKSowmiya05" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+
+              <li><a href="http://linkedin.com/in/sowmiya-karthikeyan-5bbbb725a/" target="_blank"><i
                     class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href="https://www.hackerrank.com/profile/mdaffancoder" target="_blank"><i
-                    class="fa-brands fa-hackerrank"></i></a></li>
-              <li><a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
-              </li>
+              <li><a href="https://leetcode.com/u/sowmiya_pk/" target="_blank"><i
+                    class="fa-brands fa-leetcode"></i></a></li>
+
             </ul>
           </div>
         </div>
@@ -375,13 +289,13 @@
         <!-- Contact Information Section -->
         <div class="footer-section footer-contact">
           <h4>Contact</h4>
-          <p><i class="fa fa-phone"></i> +91 93398 28230</p>
-          <p><i class="fa fa-envelope"></i> affanasgar8@gmail.com</p>
-          <p><i class="fa fa-map-marker"></i> Kankinara, Kolkata, West Bengal</p>
+          <p><i class="fa fa-phone"></i> +91 9952896414</p>
+          <p><i class="fa fa-envelope"></i> karthisowmiya05@gmail.com</p>
+          <p><i class="fa fa-map-marker"></i> 15/A AVP layout 6th Gandhi nagar Tirupur</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>Copyright &copy; affansportfolio.com | All rights reserved</p>
+        <p>Copyright &copy; Sowmiya Karthikeyan| All rights reserved</p>
       </div>
     </div>
   </footer>
